@@ -53,7 +53,6 @@ function makeBillboardFurina(text) {
   return sprite;
 }
 
-
 function main() {
   const shapes = [];
 
@@ -270,8 +269,7 @@ function main() {
   let rotationSpeed = 0.5;
   let lastPickTime = 0;
   function render(time) {
-    time *= 0.001; 
-
+    time *= 0.001;
     shapes.forEach((mesh, ndx) => {
       const rot = time * rotationSpeed * (1 + ndx * 0.01);
       mesh.rotation.x = rot;
